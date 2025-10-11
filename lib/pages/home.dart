@@ -88,7 +88,7 @@ class Home extends StatelessWidget {
                         margin: const EdgeInsets.all(12),
                         colorText: Colors.white,
                       );
-                      teamCtrl.clearCurrentTeam();
+                      teamCtrl.createNewTeam();
                     },
                   ),
           ),

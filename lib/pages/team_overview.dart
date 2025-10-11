@@ -12,16 +12,21 @@ class TeamOverview extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("ทีมโปเกมอนของฉัน")),
       body: Container(
-        color: Colors.grey[200], // สีเทาอ่อนธรรมดา
+        color: Colors.grey[200], // สีเทาอ่อน
         child: Obx(
-          () => ListView.builder(
-            padding: const EdgeInsets.all(12),
-            itemCount: teamCtrl.teams.length,
-            itemBuilder: (context, index) {
-              final team = teamCtrl.teams[index];
-              return TeamCard(team: team);
-            },
-          ),
+          () {
+            // สร้าง list แบบ reversed เพื่อให้ทีมล่าสุดอยู่บนสุด
+            final reversedTeams = teamCtrl.teams.reversed.toList();
+
+            return ListView.builder(
+              padding: const EdgeInsets.all(12),
+              itemCount: reversedTeams.length,
+              itemBuilder: (context, index) {
+                final team = reversedTeams[index];
+                return TeamCard(team: team);
+              },
+            );
+          },
         ),
       ),
       floatingActionButton: FloatingActionButton(

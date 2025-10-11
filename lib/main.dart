@@ -6,6 +6,7 @@ import 'package:get_storage/get_storage.dart';
 import 'controllers/team_controller.dart';
 import 'services/api_service.dart';
 import 'pages/home.dart';
+import 'pages/team_overview.dart';
 
 void main() async {
   // เริ่มระบบ storage สำหรับเก็บข้อมูลถาวร
@@ -30,13 +31,10 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.orange,
         scaffoldBackgroundColor: Colors.grey[50], // พื้นหลังแอป
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.orange, 
-          foregroundColor: Colors.white, 
+          backgroundColor: Colors.orange,
+          foregroundColor: Colors.white,
         ),
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch:
-              Colors.orange, 
-        ),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.orange),
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
@@ -50,10 +48,14 @@ class MyApp extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Colors.orange), // เวลา focus
           ),
-          prefixIconColor: Colors.orange, 
+          prefixIconColor: Colors.orange,
         ),
       ),
       home: Home(),
+      getPages: [
+        GetPage(name: '/', page: () => Home()),
+        GetPage(name: '/TeamOverview', page: () => TeamOverview()),
+      ],
     );
   }
 }
