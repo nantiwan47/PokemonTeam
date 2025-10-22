@@ -1,6 +1,13 @@
 # Pokemon Team Builder
 
-แอปพลิเคชัน Flutter สำหรับสร้างทีม Pokemon โดยมี Pokemon ให้เลือกทั้งหมด 27 ตัว ผู้ใช้สามารถเลือก Pokemon ได้สูงสุด 3 ตัว พร้อมฟีเจอร์ค้นหาตามชื่อ ตั้งชื่อทีม และบันทึกข้อมูลด้วย GetStorage
+แอปพลิเคชัน Pokemon Team Builder เป็น Mini project ในรายวิชา Mobile Application Programming (ปีการศึกษา 1/2568) พัฒนาแอปพลิเคชันด้วย Flutter สำหรับสร้างทีม Pokémon โดยมี Pokémon ให้เลือกทั้งหมด 27 ตัว ผู้ใช้สามารถเลือก Pokémon ได้สูงสุด 3 ตัว พร้อมฟีเจอร์ ค้นหาตามชื่อ ตั้งชื่อทีม และบันทึกข้อมูลด้วย GetStorage
+
+#### เทคโนโลยีที่ใช้
+
+* Flutter
+* GetX (State Management + Navigation)
+* GetStorage (Local Persistent Storage)
+* PokeAPI (ข้อมูล Pokémon)
 
 #### ฟีเจอร์ที่พัฒนาแล้ว (Enhancements Implemented)
 
@@ -42,9 +49,3 @@
    <img src="https://github.com/user-attachments/assets/fd4f1926-ffe7-4172-84a4-50aefbcfad65" width="200"/>
 </p>
 
-#### เทคโนโลยีที่ใช้
-
-* Flutter
-* GetX (State Management + Navigation)
-* GetStorage (Local Persistent Storage)
-* PokeAPI (ข้อมูล Pokémon)
