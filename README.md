@@ -1,6 +1,6 @@
 # Pokemon Team Builder
 
-แอปพลิเคชัน Pokemon Team Builder เป็น Mini project ในรายวิชา Mobile Application Programming (ปีการศึกษา 1/2568) พัฒนาแอปพลิเคชันด้วย Flutter สำหรับสร้างทีม Pokémon โดยมี Pokémon ให้เลือกทั้งหมด 27 ตัว ผู้ใช้สามารถเลือก Pokémon ได้สูงสุด 3 ตัว พร้อมฟีเจอร์ ค้นหาตามชื่อ ตั้งชื่อทีม และบันทึกข้อมูลด้วย GetStorage
+แอปพลิเคชันสร้างทีม Pokemon เป็น Mini project ในรายวิชา Mobile Application Programming (ปีการศึกษา 1/2568) พัฒนาแอปพลิเคชันด้วย Flutter สำหรับสร้างทีม Pokémon โดยมี Pokémon ให้เลือกทั้งหมด 27 ตัว ผู้ใช้สามารถเลือก Pokémon ได้สูงสุด 3 ตัว พร้อมฟีเจอร์ ค้นหาตามชื่อ ตั้งชื่อทีม และบันทึกข้อมูลด้วย GetStorage
 
 #### เทคโนโลยีที่ใช้
 
